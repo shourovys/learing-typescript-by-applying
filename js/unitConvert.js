@@ -38,7 +38,7 @@ console.log(getFactorial(-2));
 console.log(getFactorial(0));
 console.log(getFactorial(1));
 console.log(getFactorial(5));
-// Recalculate factorial multiple times using a function
+// Calculate Factorial in a Recursive function
 var getFactorialByFun = function (num) {
     if (num === 1) {
         return 1;
