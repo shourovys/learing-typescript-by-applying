@@ -70,10 +70,13 @@ const findOdd = (range: number): number[] => {
 };
 // console.log(findOdd(10));
 
-// const fibonacci = (num: number): number => {
-//   if (num === 1) {
-//     return 0;
-//   }
-//   fibonacci
-// };
-// console.log(fibonacci(6));
+//find fibonacci seres by recursion
+const fibonacciN = (num: number): number => {
+  if (num === 0) {
+    return 0;
+  } else if (num === 1) {
+    return 1;
+  }
+  return fibonacciN(num - 1) + fibonacciN(num - 2);
+};
+console.log(fibonacciN(6));
